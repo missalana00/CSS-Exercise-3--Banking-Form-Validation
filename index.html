@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			
+			<title>Banking Application</title>
+
+			<link rel="stylesheet" type="text/css" href="validation.css">
+			
+		</head>
+	<body>
+
+		<h1>Loan Application<h1>
+		<h4><em>Please fill out the following empty fields.</em></h4>
+
+		<form method="post">
+
+			<fieldset>
+
+				<legend><strong>Applicant Information</strong></legend>
+
+				<label for="name">Applicant First Name:</label>
+				<input type="text" id="name" name="applicant_firstname"><br>
+
+				<br><label for="middle_initial">Applicant Middle Initial:</label>
+				<input type="text" id="middle_initial" name="applicant_firstname" size="1" maxlength="2"><br>
+
+				<br><label for="lastName">Applicant Last Name:</label>
+				<input type="text" id="lastName" name="applicant_lastname"><br>
+
+
+				<br><label for="applicant_address">Applicant Address:</label>
+				<input type="text" id="street_address" name="applicant_address" size="45">
+				Apt/Suite:
+				<input type="text" id="apt_suite" name="apt_suite">
+				State :
+				<select name="current_state" id="state-field">
+				<option value="null">Select your state:</option>
+					<option value="TN">Tennessee</option>
+					<option value="FL">Mississippi</option>
+					<option value="TX">Texas</option>
+					<option value="TX">Georgia</option>
+					<option value="TX">Florida</option>
+				</select>	
+				ZipCode :
+				<input type="text" id="zipcode" name="zipcode"><br>
+
+
+				<br><label for="occupation">Applicant Occupation:</label>
+				<input type="text" id="occupation" name="applicant_occupation"><br>
+
+				<br><label for="employer">Employer:</label>
+				<input type="text" id="employer" name="applicant_employer"><br>
+
+				<br><label for="employer_address">Employer Address:</label>
+				<input type="text" id="street_address" name="street_address" size="45">
+				Apt/Suite:
+				<input type="text" id="apt_suite" name="apt_suite">
+				State :
+				<select name="current_state" id="state-field">
+				<option value="null">Select your state:</option>
+					<option value="TN">Tennessee</option>
+					<option value="FL">Mississippi</option>
+					<option value="TX">Texas</option>
+					<option value="TX">Georgia</option>
+					<option value="TX">Florida</option>
+				</select>	
+				ZipCode :
+				<input type="text" id="zipcode" name="zipcode"><br>
+
+
+			</fieldset>
+
+			<fieldset>
+
+				<legend><strong>Loan Information</strong></legend>
+
+				Type of loan:<br>
+				<br><select name ="Type of Loan">
+					<option value="Commercial">Commercial</option>
+					<option value="Real Estate">Real Estate</option>
+					<option value="Personal">Personal</option>
+					<option value="Mortgage">Mortgage</option>
+				</select>
+
+				<label for="reqAmt">Requested Amount of Loan:</label>
+				<input type="text" name="reqAmt"><br>
+
+				<br>Loan Duration:<br>
+					<br><input type="radio" name="loan_length" value="5 years" checked="checked"> 5 years
+					<input type="radio" name="loan_length" value="15 years"> 15 years
+					<input type="radio" name="loan_length" value="30 years"> 30 years<br>
+
+				<br>Special Conditions:<br>
+					<br><input type="checkbox" name="special_conditions" value="I have a down payment"> I have a down payment
+					<input type="checkbox" name="special_conditions" value="Out-of-state resident"> Out-of-state resident
+					<input type="checkbox" name="special_conditions" value="Married"> Married
+					<input type="checkbox" name="special_conditions" value="Loan will be cosigned"> Loan will be co-signed
+
+			</fieldset>
+
+			<fieldset>
+
+				<legend><strong>Miscellaneous</strong></legend>
+
+					Additional Comments:<br>
+					<br><textarea name="additional_comments" rows="8" cols="60"></textarea><br>
+
+					<br><label for="applicant_email">Applicant E-mail:</label>
+					<input type="email" id="applicant_email" size="45"><br>
+
+					<br><label for="applicant_phone">Applicant Phone Number:</label>
+					<input type="telephone" name="applicant_phone" size="25"><br>
+
+					<br><label for="applicant_url">Applicant LinkedIn URL:</label>
+					<input type="url" id="applicant_url" size="45"><br>
+
+
+				<br><div>
+					<input type="submit" id="submit_button" value="Submit Loan Application">
+				</div><br>
+
+			</fieldset>
+
+		</form>

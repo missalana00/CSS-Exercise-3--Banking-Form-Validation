@@ -1,0 +1,33 @@
+
+
+/* Body Styling*/
+
+body {
+	background-color: lightgrey;
+}
+
+h1 {
+	text-align: center;
+}
+
+/* Form Validation*/
+
+input#applicant_email:valid {
+	background-color: green;
+}
+
+input#applicant_email:invalid {
+	background-color: red;
+}
+
+input#applicant_url:valid {
+	background-color: green;
+}
+
+input#applicant_url:invalid {
+	background-color: red;
+}
+
+input#submit_button{
+	button-align: center;
+}
